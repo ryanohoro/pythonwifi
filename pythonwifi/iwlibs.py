@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Python WiFi -- a library to access wireless card properties via Python
-# Copyright (C) 2004 - 2008 Róman Joost
+# Copyright (C) 2004 - 2008 Rï¿½man Joost
 # Copyright (C) 2008 - 2009 Sean Robinson
 #
 # Contributions from:
@@ -50,7 +50,7 @@ def getNICnames():
         ['lo', 'eth0']
 
     """
-    device = re.compile('[a-z]{2,}[0-9]*:')
+    device = re.compile('[a-z]{2,}[0-9]*[a-z]*:')
     ifnames = []
 
     fp = open('/proc/net/dev', 'r')
