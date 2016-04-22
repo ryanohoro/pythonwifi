@@ -71,7 +71,7 @@ def getWNICnames():
         ['eth1', 'wifi0']
 
     """
-    device = re.compile('[a-z]{2,}[0-9]*:')
+    device = re.compile('[a-z]{2,}[0-9]*[a-z]*:')
     ifnames = []
 
     fp = open('/proc/net/wireless', 'r')
